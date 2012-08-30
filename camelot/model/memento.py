@@ -56,7 +56,7 @@ class Memento( Entity ):
     primary_key = Column( Integer(), index = True, nullable = False )
     creation_date = Column( DateTime(), default = datetime.datetime.now )
     authentication_id = Column( Integer, 
-                                ForeignKey( 'authentication_mechanism.id',
+                                ForeignKey( 'auth_mech.id',
                                             ondelete = 'restrict',
                                             onupdate = 'cascade' ), 
                                 nullable = False )

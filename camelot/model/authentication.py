@@ -63,7 +63,7 @@ def update_last_login():
 
 class AuthenticationMechanism( Entity ):
     
-    __tablename__ = 'authentication_mechanism'
+    __tablename__ = 'auth_mech'
     
     authentication_type = Column( camelot.types.Enumeration( [ (1, 'operating_system'),
                                                                (2, 'database') ] ),
